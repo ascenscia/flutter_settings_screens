@@ -183,7 +183,7 @@ class __SettingsTileState extends State<_SettingsTile> {
             visible: widget.showChildBelow,
             child: widget.child,
           ),
-          _SettingsTileDivider(),
+          //_SettingsTileDivider(),
         ],
       ),
     );
