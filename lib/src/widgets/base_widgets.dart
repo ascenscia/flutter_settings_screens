@@ -109,6 +109,9 @@ class _SettingsTile extends StatefulWidget {
   /// subtitle string for the tile
   final String? subtitle;
 
+  /// subtitle string for the tile
+  final Color? backgroundColor;
+
   /// title text style
   final TextStyle? titleTextStyle;
 
@@ -131,6 +134,7 @@ class _SettingsTile extends StatefulWidget {
     required this.title,
     required this.child,
     this.subtitle = '',
+    this.backgroundColor = Colors.white,
     this.titleTextStyle,
     this.subtitleTextStyle,
     this.onTap,
@@ -152,6 +156,7 @@ class __SettingsTileState extends State<_SettingsTile> {
   @override
   Widget build(BuildContext context) {
     return Material(
+      color: widget.backgroundColor
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
